@@ -16,14 +16,10 @@ RUN npm install --production \
 
 COPY . /app
 
-ARG NEXT_PUBLIC_BASE_URL_PROD="voicechatbot-production.up.railway.app"
-
-ENV NEXT_PUBLIC_BASE_URL=$NEXT_PUBLIC_BASE_URL_PROD
-
 
 EXPOSE 3000
 
-CMD ["npm", "run", "start", "--", "--port", "3000"]
+
 
 
 
