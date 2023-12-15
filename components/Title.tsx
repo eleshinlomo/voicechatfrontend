@@ -12,8 +12,10 @@ function Title({ setMessages }: Props) {
   const resetConversation = async () => {
     setIsResetting(true);
 
+    const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL;
+
     await axios
-      .get("http://localhost:8000/reset", {
+      .get(`${BASE_URL}/reset`, {
         headers: {
           "Content-Type": "application/json",
         },
