@@ -1,7 +1,6 @@
 "use client"
 import { useState } from "react";
 import Title from "@/components/Title";
-import axios from "axios";
 import {RecordMessage} from "@/components/RecordMessage";
 import Link from 'next/link'
 
