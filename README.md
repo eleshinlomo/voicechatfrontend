@@ -1,14 +1,12 @@
 New Instructions
 
 
-To Start Frontend with Docker locally
+To Start Frontend  locally
 
-Make sure Docker Desktop is running
+cd frontend
 
-docker compose  up --build 
+npm i
 
-docker build -t frontend --no-cache .
+start project with code below
 
-docker run -it -p 3000:3000 frontend 
-
-Your frontend should be live. Visit http://localhost:3000 to see it.
+npm run dev
