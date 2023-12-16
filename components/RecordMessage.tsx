@@ -19,7 +19,8 @@ export const RecordMessage = ({ handleStop }: Props) => {
           
             
 <div className="flex">
-<button className="bg-white p-4 rounded-full" onClick={startRecording}>Start</button>
+<button className="bg-blue-900 p-4 rounded-full" 
+onClick={startRecording}>Start</button>
 <RecordIcon
               classText={
                 status == "recording"
@@ -27,7 +28,8 @@ export const RecordMessage = ({ handleStop }: Props) => {
                   : "text-sky-500"
               }
             />
-<button className="bg-white p-4 rounded-full" onClick={stopRecording}>Stop</button>
+<button className="bg-blue-900 p-4 rounded-full" 
+onClick={stopRecording}>Stop</button>
 
 </div>
 

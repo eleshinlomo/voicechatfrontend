@@ -24,13 +24,14 @@ const Controller = () => {
   
     try {
       // Play audio immediately
-      
+      // const userAudio = new Audio(mediaBlobUrl)
+      // userAudio.play()
   
       // Fetch the content from the URL and convert it to a Blob
       const response = await fetch(mediaBlobUrl);
       const blob = await response.blob();
   
-      // Send blob to the server (if needed)
+      // Send blob to the server 
       const formData = new FormData();
       formData.append("file", blob, "myFile.wav");
   
@@ -121,7 +122,7 @@ const Controller = () => {
         </div>
 
         {/* Recorder */}
-        <div className="fixed bottom-0 w-full py-6 border-t text-center bg-gradient-to-r from-sky-500 to-green-500">
+        <div className="fixed bottom-0 w-full py-6 border-t text-center bg-gradient-to-r from-black to-blue-500">
           <div className="flex justify-center items-center w-full">
             <div>
               
